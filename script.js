@@ -14,14 +14,14 @@ function showPrecios(){
         var fecha = new Date(data.last_update);
         console.log(fecha);
         document.getElementById("datos").innerHTML +=`
-        <h2>Dólar Azul Guiño Guiño 😉</h2>
+        <h2>Dólar Azul, guiño guiño 😉</h2>
         <h3>Venta: $${data.blue.value_sell} <br>
         Compra: $${data.blue.value_buy} <br>
         Promedio: $${data.blue.value_avg} <br>
         </h3>
         <h5>Última actualización:
         <br>
-        ${fecha.getDate()}/${fecha.getMonth()+1}/${fecha.getFullYear()}      ${fecha.getHours()}:${fecha.getMinutes()}<br>
+        ${fecha.getDate()}/${fecha.getMonth()+1}/${fecha.getFullYear()}    ${fecha.toLocaleTimeString()}<br>
         </h5>
         `;
     });
