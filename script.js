@@ -19,7 +19,7 @@ function showPrecios(){
         Compra: $${data.blue.value_buy} <br>
         Promedio: $${data.blue.value_avg} <br>
         </h3>
-        <h5>Ultima actualización:
+        <h5>Última actualización:
         <br>
         ${fecha.getDate()}/${fecha.getMonth()+1}/${fecha.getFullYear()}      ${fecha.getHours()}:${fecha.getMinutes()}<br>
         </h5>
