@@ -10,7 +10,7 @@ function getPrecio() {
 
 function showPrecios() {
   getPrecio().then((data) => {
-    //console.log(data);
+    console.log(data);
     var fechaActual = new Date();
     var fecha = new Date(data.last_update);
     //console.log(fecha);
