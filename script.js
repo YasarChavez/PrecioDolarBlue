@@ -30,8 +30,6 @@ function showPrecios() {
         `;
   });
 }
-//showPrecios();
-
 function update() {
   setInterval(showPrecios, 1000);
 }
