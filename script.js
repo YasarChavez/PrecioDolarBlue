@@ -10,10 +10,11 @@ function getPrecio() {
 
 function showPrecios() {
   getPrecio().then((data) => {
-    console.log(data);
+    //console.log(data);
     var fechaActual = new Date();
     var fecha = new Date(data.last_update);
-    console.log(fecha);
+    //console.log(fecha);
+    console.log(fechaActual.toLocaleTimeString());
     document.getElementById("datos").innerHTML = `
         <h2>Dólar Azul, guiño guiño 😉</h2>
         <h3>Venta: $${data.blue.value_sell} <br>
